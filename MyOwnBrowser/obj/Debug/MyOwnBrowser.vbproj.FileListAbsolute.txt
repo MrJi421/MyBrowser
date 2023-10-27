@@ -1,0 +1,15 @@
+C:\Users\Hemanth\Documents\Visual Studio 2022\Projects\MyOwnBrowser\MyOwnBrowser\bin\Debug\MyOwnBrowser.exe.config
+C:\Users\Hemanth\Documents\Visual Studio 2022\Projects\MyOwnBrowser\MyOwnBrowser\bin\Debug\MyOwnBrowser.exe
+C:\Users\Hemanth\Documents\Visual Studio 2022\Projects\MyOwnBrowser\MyOwnBrowser\bin\Debug\MyOwnBrowser.pdb
+C:\Users\Hemanth\Documents\Visual Studio 2022\Projects\MyOwnBrowser\MyOwnBrowser\bin\Debug\MyOwnBrowser.xml
+C:\Users\Hemanth\Documents\Visual Studio 2022\Projects\MyOwnBrowser\MyOwnBrowser\obj\Debug\MyOwnBrowser.vbproj.AssemblyReference.cache
+C:\Users\Hemanth\Documents\Visual Studio 2022\Projects\MyOwnBrowser\MyOwnBrowser\obj\Debug\MyOwnBrowser.Resources.resources
+C:\Users\Hemanth\Documents\Visual Studio 2022\Projects\MyOwnBrowser\MyOwnBrowser\obj\Debug\MyOwnBrowser.vbproj.GenerateResource.cache
+C:\Users\Hemanth\Documents\Visual Studio 2022\Projects\MyOwnBrowser\MyOwnBrowser\obj\Debug\MyOwnBrowser.vbproj.CoreCompileInputs.cache
+C:\Users\Hemanth\Documents\Visual Studio 2022\Projects\MyOwnBrowser\MyOwnBrowser\obj\Debug\MyOwnBrowser.exe
+C:\Users\Hemanth\Documents\Visual Studio 2022\Projects\MyOwnBrowser\MyOwnBrowser\obj\Debug\MyOwnBrowser.xml
+C:\Users\Hemanth\Documents\Visual Studio 2022\Projects\MyOwnBrowser\MyOwnBrowser\obj\Debug\MyOwnBrowser.pdb
+C:\Users\Hemanth\Documents\Visual Studio 2022\Projects\MyOwnBrowser\MyOwnBrowser\obj\Debug\MyOwnBrowser.falkon.resources
+C:\Users\Hemanth\Documents\Visual Studio 2022\Projects\MyOwnBrowser\MyOwnBrowser\obj\Debug\MyOwnBrowser.SplashScreen1.resources
+C:\Users\Hemanth\Documents\Visual Studio 2022\Projects\MyOwnBrowser\MyOwnBrowser\obj\Debug\MyOwnBrowser.AboutBox.resources
+C:\Users\Hemanth\Documents\Visual Studio 2022\Projects\MyOwnBrowser\MyOwnBrowser\obj\Debug\MyOwnBrowser.Navigate.resources
