@@ -67,10 +67,10 @@ Partial Class Navigate
         'lblInfoUrl
         '
         Me.lblInfoUrl.AutoSize = True
-        Me.lblInfoUrl.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblInfoUrl.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblInfoUrl.Location = New System.Drawing.Point(12, 9)
         Me.lblInfoUrl.Name = "lblInfoUrl"
-        Me.lblInfoUrl.Size = New System.Drawing.Size(401, 20)
+        Me.lblInfoUrl.Size = New System.Drawing.Size(336, 16)
         Me.lblInfoUrl.TabIndex = 1
         Me.lblInfoUrl.Text = "Type an Internet address and Falkon will open it for you."
         '
@@ -79,7 +79,7 @@ Partial Class Navigate
         Me.txtUrl.Location = New System.Drawing.Point(12, 35)
         Me.txtUrl.Name = "txtUrl"
         Me.txtUrl.Size = New System.Drawing.Size(426, 20)
-        Me.txtUrl.TabIndex = 2
+        Me.txtUrl.TabIndex = 0
         '
         'Navigate
         '

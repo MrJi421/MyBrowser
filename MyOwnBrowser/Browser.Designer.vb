@@ -24,10 +24,7 @@ Partial Class Falkon
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Falkon))
         Me.myBrowser = New System.Windows.Forms.WebBrowser()
-        Me.msBrowser = New System.Windows.Forms.MenuStrip()
-        Me.HelpToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.AboutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.NavigateToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripContainer1 = New System.Windows.Forms.ToolStripContainer()
         Me.mainFormToolcontainer = New System.Windows.Forms.ToolStrip()
         Me.NewToolStripButton = New System.Windows.Forms.ToolStripButton()
         Me.OpenToolStripButton = New System.Windows.Forms.ToolStripButton()
@@ -39,55 +36,55 @@ Partial Class Falkon
         Me.PasteToolStripButton = New System.Windows.Forms.ToolStripButton()
         Me.toolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
         Me.HelpToolStripButton = New System.Windows.Forms.ToolStripButton()
-        Me.ToolStripContainer1 = New System.Windows.Forms.ToolStripContainer()
-        Me.msBrowser.SuspendLayout()
-        Me.mainFormToolcontainer.SuspendLayout()
+        Me.msBrowser = New System.Windows.Forms.MenuStrip()
+        Me.NavigateToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.HelpToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.AboutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.sscBrowser = New System.Windows.Forms.StatusStrip()
+        Me.lblApplicationStatus = New System.Windows.Forms.ToolStripStatusLabel()
+        Me.pbStatus = New System.Windows.Forms.ToolStripProgressBar()
+        Me.ToolStripContainer1.ContentPanel.SuspendLayout()
         Me.ToolStripContainer1.TopToolStripPanel.SuspendLayout()
         Me.ToolStripContainer1.SuspendLayout()
+        Me.mainFormToolcontainer.SuspendLayout()
+        Me.msBrowser.SuspendLayout()
+        Me.sscBrowser.SuspendLayout()
         Me.SuspendLayout()
         '
         'myBrowser
         '
         Me.myBrowser.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.myBrowser.Location = New System.Drawing.Point(0, 24)
+        Me.myBrowser.Location = New System.Drawing.Point(0, 0)
         Me.myBrowser.MinimumSize = New System.Drawing.Size(20, 20)
         Me.myBrowser.Name = "myBrowser"
-        Me.myBrowser.Size = New System.Drawing.Size(624, 417)
+        Me.myBrowser.Size = New System.Drawing.Size(624, 392)
         Me.myBrowser.TabIndex = 0
         '
-        'msBrowser
+        'ToolStripContainer1
         '
-        Me.msBrowser.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.HelpToolStripMenuItem})
-        Me.msBrowser.Location = New System.Drawing.Point(0, 0)
-        Me.msBrowser.Name = "msBrowser"
-        Me.msBrowser.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional
-        Me.msBrowser.Size = New System.Drawing.Size(624, 24)
-        Me.msBrowser.TabIndex = 1
         '
-        'HelpToolStripMenuItem
+        'ToolStripContainer1.ContentPanel
         '
-        Me.HelpToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AboutToolStripMenuItem, Me.NavigateToolStripMenuItem})
-        Me.HelpToolStripMenuItem.Name = "HelpToolStripMenuItem"
-        Me.HelpToolStripMenuItem.Size = New System.Drawing.Size(44, 20)
-        Me.HelpToolStripMenuItem.Text = "&Help"
+        Me.ToolStripContainer1.ContentPanel.AutoScroll = True
+        Me.ToolStripContainer1.ContentPanel.Controls.Add(Me.myBrowser)
+        Me.ToolStripContainer1.ContentPanel.Size = New System.Drawing.Size(624, 392)
+        Me.ToolStripContainer1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.ToolStripContainer1.Location = New System.Drawing.Point(0, 0)
+        Me.ToolStripContainer1.Name = "ToolStripContainer1"
+        Me.ToolStripContainer1.Size = New System.Drawing.Size(624, 441)
+        Me.ToolStripContainer1.TabIndex = 3
+        Me.ToolStripContainer1.Text = "ToolStripContainer1"
         '
-        'AboutToolStripMenuItem
+        'ToolStripContainer1.TopToolStripPanel
         '
-        Me.AboutToolStripMenuItem.Name = "AboutToolStripMenuItem"
-        Me.AboutToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
-        Me.AboutToolStripMenuItem.Text = "&About..."
-        '
-        'NavigateToolStripMenuItem
-        '
-        Me.NavigateToolStripMenuItem.Name = "NavigateToolStripMenuItem"
-        Me.NavigateToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
-        Me.NavigateToolStripMenuItem.Text = "&Navigate"
+        Me.ToolStripContainer1.TopToolStripPanel.Controls.Add(Me.msBrowser)
+        Me.ToolStripContainer1.TopToolStripPanel.Controls.Add(Me.mainFormToolcontainer)
         '
         'mainFormToolcontainer
         '
         Me.mainFormToolcontainer.Dock = System.Windows.Forms.DockStyle.None
         Me.mainFormToolcontainer.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NewToolStripButton, Me.OpenToolStripButton, Me.SaveToolStripButton, Me.PrintToolStripButton, Me.toolStripSeparator, Me.CutToolStripButton, Me.CopyToolStripButton, Me.PasteToolStripButton, Me.toolStripSeparator1, Me.HelpToolStripButton})
-        Me.mainFormToolcontainer.Location = New System.Drawing.Point(3, 0)
+        Me.mainFormToolcontainer.Location = New System.Drawing.Point(3, 24)
         Me.mainFormToolcontainer.Name = "mainFormToolcontainer"
         Me.mainFormToolcontainer.Size = New System.Drawing.Size(208, 25)
         Me.mainFormToolcontainer.TabIndex = 2
@@ -175,22 +172,55 @@ Partial Class Falkon
         Me.HelpToolStripButton.Size = New System.Drawing.Size(23, 22)
         Me.HelpToolStripButton.Text = "He&lp"
         '
-        'ToolStripContainer1
+        'msBrowser
         '
+        Me.msBrowser.Dock = System.Windows.Forms.DockStyle.None
+        Me.msBrowser.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NavigateToolStripMenuItem, Me.HelpToolStripMenuItem})
+        Me.msBrowser.Location = New System.Drawing.Point(0, 0)
+        Me.msBrowser.Name = "msBrowser"
+        Me.msBrowser.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional
+        Me.msBrowser.Size = New System.Drawing.Size(624, 24)
+        Me.msBrowser.TabIndex = 1
         '
-        'ToolStripContainer1.ContentPanel
+        'NavigateToolStripMenuItem
         '
-        Me.ToolStripContainer1.ContentPanel.Size = New System.Drawing.Size(624, 392)
-        Me.ToolStripContainer1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.ToolStripContainer1.Location = New System.Drawing.Point(0, 24)
-        Me.ToolStripContainer1.Name = "ToolStripContainer1"
-        Me.ToolStripContainer1.Size = New System.Drawing.Size(624, 417)
-        Me.ToolStripContainer1.TabIndex = 3
-        Me.ToolStripContainer1.Text = "ToolStripContainer1"
+        Me.NavigateToolStripMenuItem.Name = "NavigateToolStripMenuItem"
+        Me.NavigateToolStripMenuItem.Size = New System.Drawing.Size(66, 20)
+        Me.NavigateToolStripMenuItem.Text = "&Navigate"
         '
-        'ToolStripContainer1.TopToolStripPanel
+        'HelpToolStripMenuItem
         '
-        Me.ToolStripContainer1.TopToolStripPanel.Controls.Add(Me.mainFormToolcontainer)
+        Me.HelpToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AboutToolStripMenuItem})
+        Me.HelpToolStripMenuItem.Name = "HelpToolStripMenuItem"
+        Me.HelpToolStripMenuItem.Size = New System.Drawing.Size(44, 20)
+        Me.HelpToolStripMenuItem.Text = "&Help"
+        '
+        'AboutToolStripMenuItem
+        '
+        Me.AboutToolStripMenuItem.Name = "AboutToolStripMenuItem"
+        Me.AboutToolStripMenuItem.Size = New System.Drawing.Size(107, 22)
+        Me.AboutToolStripMenuItem.Text = "&About"
+        '
+        'sscBrowser
+        '
+        Me.sscBrowser.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.lblApplicationStatus, Me.pbStatus})
+        Me.sscBrowser.Location = New System.Drawing.Point(0, 419)
+        Me.sscBrowser.Name = "sscBrowser"
+        Me.sscBrowser.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional
+        Me.sscBrowser.Size = New System.Drawing.Size(624, 22)
+        Me.sscBrowser.TabIndex = 4
+        Me.sscBrowser.Text = "StatusStrip1"
+        '
+        'lblApplicationStatus
+        '
+        Me.lblApplicationStatus.Name = "lblApplicationStatus"
+        Me.lblApplicationStatus.Size = New System.Drawing.Size(120, 17)
+        Me.lblApplicationStatus.Text = "ToolStripStatusLabel1"
+        '
+        'pbStatus
+        '
+        Me.pbStatus.Name = "pbStatus"
+        Me.pbStatus.Size = New System.Drawing.Size(125, 16)
         '
         'Falkon
         '
@@ -198,32 +228,35 @@ Partial Class Falkon
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ControlDark
         Me.ClientSize = New System.Drawing.Size(624, 441)
+        Me.Controls.Add(Me.sscBrowser)
         Me.Controls.Add(Me.ToolStripContainer1)
-        Me.Controls.Add(Me.myBrowser)
-        Me.Controls.Add(Me.msBrowser)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MainMenuStrip = Me.msBrowser
         Me.Name = "Falkon"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Falkon"
-        Me.msBrowser.ResumeLayout(False)
-        Me.msBrowser.PerformLayout()
-        Me.mainFormToolcontainer.ResumeLayout(False)
-        Me.mainFormToolcontainer.PerformLayout()
+        Me.ToolStripContainer1.ContentPanel.ResumeLayout(False)
         Me.ToolStripContainer1.TopToolStripPanel.ResumeLayout(False)
         Me.ToolStripContainer1.TopToolStripPanel.PerformLayout()
         Me.ToolStripContainer1.ResumeLayout(False)
         Me.ToolStripContainer1.PerformLayout()
+        Me.mainFormToolcontainer.ResumeLayout(False)
+        Me.mainFormToolcontainer.PerformLayout()
+        Me.msBrowser.ResumeLayout(False)
+        Me.msBrowser.PerformLayout()
+        Me.sscBrowser.ResumeLayout(False)
+        Me.sscBrowser.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
 
     Friend WithEvents myBrowser As WebBrowser
+    Friend WithEvents ToolStripContainer1 As ToolStripContainer
     Friend WithEvents msBrowser As MenuStrip
+    Friend WithEvents NavigateToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents HelpToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents AboutToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents NavigateToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents mainFormToolcontainer As ToolStrip
     Friend WithEvents NewToolStripButton As ToolStripButton
     Friend WithEvents OpenToolStripButton As ToolStripButton
@@ -235,5 +268,7 @@ Partial Class Falkon
     Friend WithEvents PasteToolStripButton As ToolStripButton
     Friend WithEvents toolStripSeparator1 As ToolStripSeparator
     Friend WithEvents HelpToolStripButton As ToolStripButton
-    Friend WithEvents ToolStripContainer1 As ToolStripContainer
+    Friend WithEvents sscBrowser As StatusStrip
+    Friend WithEvents lblApplicationStatus As ToolStripStatusLabel
+    Friend WithEvents pbStatus As ToolStripProgressBar
 End Class
